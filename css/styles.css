@@ -1,0 +1,125 @@
+body {
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #24272b;
+    color: white;
+    line-height: 2em;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #e0510d;
+}
+
+section{
+    padding: 100px 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.home-section,
+.viz-section,
+.credit-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-section .left {
+    width: 45%;
+}
+
+.home-section .left img {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.home-section .right {
+    width: 55%;
+}
+
+.home-section .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.home-section .right p,
+.home-section .right h1 {
+    text-align: justify;
+}
+
+.home-section .right a {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 2px;
+    border-radius: 6px;
+}
+
+.viz-section .left {
+    width: 60%;
+}
+
+.viz-section .left img {
+    height: 385px;
+    width: 700px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.viz-section .right {
+    width: 40%;
+}
+
+.viz-section .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.viz-section .right p,
+.viz-section .right h1 {
+    text-align: justify;
+}
+
+.viz-section .right a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 2px;
+    border-radius: 6px;
+}
+

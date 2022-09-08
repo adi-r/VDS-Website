@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 529 Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar --> 
+    <nav class="navbar">
+            <ul>
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="viz.html"> Viz </a></li>
+                <li><a href="svg_motion.html"> SVG </a></li>
+                <li><a href="credits.html"> Credits </a></li>
+            </ul>
+    </nav>
+
+    <!-- SVG Section-->
+    <section class="svg_motion" id="svg_motion">
+        <div class="svg-section">
+            <p>You can individually interact with the objects by clicking on them. The circle changes color, the ellipse turns into a rectangle,
+                and the rectangle becomes smaller when clicked on.
+            </p>
+            <svg width="400" height="400">
+                <circle id="circle" onclick="circleChange()" cx="50" cy="50" r="45" 
+                stroke="white" stroke-width="4" fill="green" />
+
+                <animate 
+                    xlink:href="#circle" 
+                    attributename="cy" 
+                    from="50" 
+                    to="300" 
+                    dur="3s" 
+                    repeatcount="indefinite"
+                    fill="freeze" 
+                    id="circ-anim">
+                </animate>
+            </svg>
+
+            <svg width="400" height="400">
+                <rect id="ellipse" onclick="ellipseChange()" rx="200" ry="200" x="5" y="80" width="300" height="100" 
+                stroke="white" stroke-width="4" fill="blue"/>
+
+                <animate 
+                    xlink:href="#ellipse" 
+                    attributename="y" 
+                    from="80" 
+                    to="300" 
+                    dur="3s"
+                    repeatcount="indefinite"
+                    fill="freeze" 
+                    id="rect-anim">
+                </animate>
+            </svg>
+
+            <svg width="400" height="400">
+                <rect id="rect" onclick="rectChange()" x="10" y="80" width="300" height="100" 
+                stroke="white" stroke-width="4" fill="orange"/>
+                
+                <animate 
+                    xlink:href="#rect" 
+                    attributename="y" 
+                    from="80" 
+                    to="300" 
+                    dur="3s"
+                    repeatcount="indefinite"
+                    fill="freeze" 
+                    id="rect-anim">
+                </animate>
+            </svg>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+
+
+</body>
+</html>
